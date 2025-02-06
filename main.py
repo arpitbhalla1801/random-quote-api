@@ -469,3 +469,7 @@ def get_random_quote():
 #     return {"message": "Quote added successfully", "quote": new_quote}
 
 # Run the server: uvicorn main:app --reload
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
